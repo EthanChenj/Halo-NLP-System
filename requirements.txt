@@ -1,0 +1,17 @@
+transformers
+torch
+scikit-learn
+pandas
+nltk
+bertopic
+umap-learn
+hdbscan
+flask
+streamlit
+plotly
+sentence-transformers
+accelerate
+bertopic
+json
+os
+pickle
