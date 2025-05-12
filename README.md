@@ -29,10 +29,6 @@ Performs sentiment analysis and topic modeling on text data. This work was done 
 
 ├── notebooks
 
-│ ├── mlruns
-
-│ ├── models
-
 │ ├── sentiment_analysis_training.ipynb
 
 │ └── topic_modeling_exploration.ipynb
