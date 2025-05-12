@@ -7,7 +7,7 @@
 
   
 
-Performs sentiment analysis and topic modeling on text data. This work was done as part of an internship at Halo Services. Predicts sentiment of future text (ex. reviews) and identifies topics.
+Performs sentiment analysis and topic modeling on text data. This work was done as part of an internship at Halo Services. Predicts sentiment and identifies topics of future text (ex. reviews).
 
   
 
