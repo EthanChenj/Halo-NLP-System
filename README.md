@@ -15,19 +15,23 @@ Performs sentiment analysis and topic modeling on text data. This work was done 
 
   
 
-- data/: Contains the raw datasets.
+- data: Contains the raw datasets.
 
-- models/: Contains the trained models.
+- models: Contains the trained models.
 
-- notebooks/: Jupyter Notebooks used for exploration and training models.
+- notebooks: Jupyter Notebooks used for exploration and training models.
 
-- src/: Contains scripts using models, and API for analyzing reviews.
+- src: Contains scripts using models and API for analyzing reviews.
 
 ├── data # EXCLUDED FROM REPOSITORY
 
 ├── models # EXCLUDED FROM REPOSITORY
 
-├── notebooks # INCLUDED IN REPOSITORY
+├── notebooks
+
+│ ├── mlruns
+
+│ ├── models
 
 │ ├── sentiment_analysis_training.ipynb
 
@@ -35,7 +39,7 @@ Performs sentiment analysis and topic modeling on text data. This work was done 
 
 ├── requirements.txt
 
-├── src # INCLUDED IN REPOSITORY
+├── src
 
 │ └── api.py
 
