@@ -1,4 +1,3 @@
-
 # Halo Services: Sentiment Analysis and Topic Modeling
 
   
@@ -7,7 +6,8 @@
 
   
 
-Performs sentiment analysis and topic modeling on text data. This work was done as part of an internship at Halo Services. Predicts sentiment and identifies topics of future text (ex., reviews, transcripts).
+This project implements a Natural Language Processing (NLP) pipeline for analyzing text data. Developed during an internship at Halo Services, this system uses machine learning techniques to predict the emotional tone (positive, negative, or neutral) and identify key discussion topics within unstructured text, such as customer reviews. The pipeline utilizes a transformer-based model for sentiment analysis, and Latent Dirichlet Allocation (LDA) from scikit-learn for topic modeling. The output of this analysis provides valuable insights into customer opinions and trends, which can be used to improve services and decision-making.
+
 
   
 
@@ -53,8 +53,8 @@ Performs sentiment analysis and topic modeling on text data. This work was done 
 ### Topic Modeling:
 
 - **Model**: The topic modeling component uses Latent Dirichlet Allocation (LDA) from scikit-learn. The ```TopicModeler``` class in ```topic_modeling.py``` is responsible for handling all the operations related to topic modeling, encapsulating this functionality.
-- **LDA**: We use a probabilistic model for discovering underlying topics in a corpus in an unsupervised manner.
-- **TF-IDF**: The input text documents are transformed into a document-term matrix before being fed into the LDA model, representing the importance of each word in each document.
+- **Latent Dirichlet Allocation (LDA)**: We use a probabilistic model for discovering underlying topics in a corpus in an unsupervised manner.
+- **Term Frequency-Inverse Document Frequency (TF-IDF)**: The input text documents are transformed into a document-term matrix before being fed into the LDA model, representing the importance of each word in each document.
 
 ## Interaction Between Notebooks and Scripts
 
