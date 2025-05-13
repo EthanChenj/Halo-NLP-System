@@ -6,7 +6,7 @@
 
   
 
-This project implements a Natural Language Processing (NLP) pipeline for analyzing text data. Developed during an internship at Halo Services, this system uses machine learning techniques to predict the emotional tone (positive, negative, or neutral) and identify key discussion topics within unstructured text, such as customer reviews. The pipeline utilizes a transformer-based model for sentiment analysis, and Latent Dirichlet Allocation (LDA) from scikit-learn for topic modeling. The output of this analysis provides valuable insights into customer opinions and trends, which can be used to improve services and decision-making.
+This project implements a Natural Language Processing (NLP) pipeline for analyzing text data. Developed during an internship at Halo Services, this system uses machine learning techniques to predict the emotional tone (positive, negative, or neutral) and identify key discussion topics within unstructured text, such as customer reviews. The pipeline utilizes a transformer-based model for sentiment analysis and Latent Dirichlet Allocation (LDA) from scikit-learn for topic modeling. The output of this analysis provides valuable insights into customer opinions and trends, which can be used to improve services and decision-making.
 
 
   
@@ -36,6 +36,17 @@ This project implements a Natural Language Processing (NLP) pipeline for analyzi
 │   ├── sentiment_analysis.py
 │   └── topic_modeling.py
 └── README.md
+```
+
+## Dependencies
+```
+Python 3.x
+Transformers
+PyTorch
+Scikit-learn
+NLTK
+re
+Pickle
 ```
 
 ## Modeling Details
