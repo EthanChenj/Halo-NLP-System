@@ -78,12 +78,22 @@ This system combines Jupyter Notebooks and Python scripts to organize the workfl
 ### Scripts:
 
 - Contains reusable code, organized into functions and classes.
-- The ```src``` directory contains scripts that provides functions for text preprocessing, and defines the ```SentimentAnalyzer``` and ```TopicModeler``` classes for their respective analysis and modeling.
+- The ```src``` directory contains scripts that provide functions for text preprocessing, and defines the ```SentimentAnalyzer``` and ```TopicModeler``` classes for their respective analysis and modeling.
 - Flask API is set up to expose the sentiment analysis and topic modeling functionalities.
 
 ### Workflow Summary:
 
-- **Notebooks Develop Models**: The Notebooks are used to develop and train the machine learning models(sentiment analysis and topic modeling) and save the trained models to the models directory.
+- **Notebooks Develop Models**: The Notebooks are used to develop and train the machine learning models (sentiment analysis and topic modeling) and save the trained models to the models directory.
 - **Scripts Use Models**: Python scripts then use these trained models for specific tasks. Loads the trained models from the models directory and uses them on a new set of text.
 - **API Exposes Functionality**: The ```api.py``` script imports classes from the scripts and uses them to create an API, which can be used by other applications to analyze text.
+
+## Model Exploration
+
+The development of this system involved the process of exploration, experimentation, and refinement.
+
+- **Initial Models:** Initially looked at Support Vector Machines (SVM) because they allowed for splitting data into different classes (positive and negative). However, it lacked in accurately capturing the nuances of sentiment in the text data. The primary issue was their inability to understand the context between words because they treat words as independent units. In addition, SVMs struggle to capture relationships between longer texts, where words in the beginning may influence the interpretation of words much later.
+
+- **Transformer Models:** To address these limitations, the exploration shifted towards transformer-based models, where there's more context, and the representation of a word changes based on the surrounding words. For example, BERT can differentiate between two uses of the same word. And with self-attention, it can weigh the importance and find different meanings of words in a sentence.
+
+Transformer models worked better for sentiment analysis because they understand context, word order, and complex relationships within text data, which is important for accurately determining sentiment before moving on to theme identification.
 
