@@ -93,7 +93,7 @@ The development of this system involved the process of exploration, experimentat
 
 - **Initial Models:** Initially looked at Support Vector Machines (SVM) because they allowed for splitting data into different classes (positive and negative). However, it lacked in accurately capturing the nuances of sentiment in the text data. The primary issue was their inability to understand the context between words because they treat words as independent units. In addition, SVMs struggle to capture relationships between longer texts, where words in the beginning may influence the interpretation of words much later.
 
-- **Transformer Models:** To address these limitations, the exploration shifted towards transformer-based models, where there's more context, and the representation of a word changes based on the surrounding words. For example, BERT can differentiate between two uses of the same word. And with self-attention, it can weigh the importance and find different meanings of words in a sentence.
+- **Transformer Models:** To address these limitations, the exploration shifted towards transformer-based models, where there's more context, and the representation of a word changes based on the surrounding words. For example, BERT can differentiate between two uses of the same word. With self-attention, it can weigh the importance and find different meanings of words in a sentence.
 
 Transformer models worked better for sentiment analysis because they understand context, word order, and complex relationships within text data, which is important for accurately determining sentiment before moving on to theme identification.
 
